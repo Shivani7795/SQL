@@ -12,9 +12,9 @@ CREATE TABLE workers_details(id int,name varchar(20),dress_code varchar(20),age 
 ALTER TABLE airlines_details ADD COLUMN name varchar(20);
 ALTER TABLE airlines_details ADD COLUMN no_luggage varchar(20);
 ALTER TABLE airlines_details DROP COLUMN name ;
-ALTER TABLE passanger_details RENAME COLUMN name to passanger_name;
-ALTER TABLE airhostess_details RENAME COLUMN name to airhostess_name;
-ALTER TABLE pilot_details RENAME COLUMN name to pilot_name;
+ALTER TABLE passanger_details RENAME passanger_name;
+ALTER TABLE airhostess_details RENAME airhostess_name;
+ALTER TABLE pilot_details RENAME pilot_name;
 ALTER TABLE passanger_details MODIFY COLUMN age bigint;
 ALTER TABLE airhostess_details MODIFY COLUMN age bigint;
 ALTER TABLE pilot_details MODIFY COLUMN age bigint;
